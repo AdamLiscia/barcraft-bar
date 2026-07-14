@@ -42,6 +42,9 @@ a:hover { color: #7fe3b6; }
 .site-header img { width: 36px; height: 36px; border-radius: 9px; }
 .site-header .name { font-weight: 700; font-size: 1.15rem; letter-spacing: 0.2px; }
 .site-header a { color: var(--text); text-decoration: none; }
+.site-nav { margin-left: auto; display: flex; gap: 20px; }
+.site-nav a { color: var(--muted); font-weight: 600; font-size: 0.98rem; }
+.site-nav a:hover { color: var(--accent-bright); }
 
 /* Hero */
 .hero {

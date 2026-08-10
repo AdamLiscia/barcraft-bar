@@ -299,6 +299,14 @@ a:hover { color: var(--accent-hover); }
   font-weight: 700;
   font-size: 0.95rem;
 }
+/* Featured card — spans the grid so it reads as an upgrade, not a fifth equal item. */
+.card-wide {
+  grid-column: 1 / -1;
+  border-color: var(--accent-soft);
+  background: linear-gradient(180deg, var(--surface), var(--bg));
+}
+.card-wide p + p { margin-top: 12px; }
+.card-wide b { color: var(--text); }
 
 /* Rate card */
 .rate-card {

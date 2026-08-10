@@ -5,6 +5,8 @@ Static marketing + legal pages (privacy, support) for BarCraft. No build step �
 ## Pages
 - `index.html` — landing
 - `privacy.html` — privacy policy (store-required URL)
+- `terms.html` — Terms of Use / EULA, incl. the zero-tolerance objectionable-content clause
+  required for App Store Guideline 1.2 (UGC apps)
 - `support.html` — support + account/data deletion (store-required URLs)
 
 ## Preview locally

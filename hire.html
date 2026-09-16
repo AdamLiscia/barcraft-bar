@@ -52,7 +52,7 @@
       "name": "Adam Liscia",
       "jobTitle": "Bartender",
       "worksFor": { "@type": "Organization", "name": "Sunday Hospitality — Bedford Post Tavern" },
-      "url": "https://barcraft.bar/hire.html"
+      "url": "https://barcraft.bar/about.html"
     },
     "makesOffer": [
       {
@@ -67,8 +67,8 @@
       },
       {
         "@type": "Offer",
-        "itemOffered": { "@type": "Service", "name": "Batched cocktail drop-off", "description": "Pre-batched craft cocktails delivered ready to pour — no bartender on site." },
-        "priceSpecification": { "@type": "PriceSpecification", "price": "275", "priceCurrency": "USD" }
+        "itemOffered": { "@type": "Service", "name": "Batched cocktail drop-off", "description": "Pre-batched craft cocktails delivered ready to pour in swing-top bottles you keep — no bartender on site. You supply the spirits; $175 plus $3 per drink, 50-drink minimum." },
+        "priceSpecification": { "@type": "PriceSpecification", "price": "175", "priceCurrency": "USD" }
       },
       {
         "@type": "Offer",
@@ -92,6 +92,8 @@
         "acceptedAnswer": { "@type": "Answer", "text": "Everything that isn't alcohol, for $200 up to 50 guests: lemon, lime, orange, grapefruit and cranberry juice (Natalie's not-from-concentrate, never sour mix), club soda, tonic and ginger beer, all the garnish fruit cut the day of plus cherries, olives and herbs, and the cocktail picks, cups, straws and napkins. Ice is the only thing not included — it is on your shopping list with an exact quantity." } },
       { "@type": "Question", "name": "What does fresh-squeezed citrus add?",
         "acceptedAnswer": { "@type": "Answer", "text": "For $150 on top, I buy lemons and limes by the case and press them the morning of your party rather than pouring from a bottle. Bottled juice is fine, but fresh is a real step up in a drink like a margarita or a daiquiri where the citrus is the cocktail. What you are paying for is about three hours of squeezing." } },
+      { "@type": "Question", "name": "How does the batched cocktail drop-off work?",
+        "acceptedAnswer": { "@type": "Answer", "text": "You buy the spirits and they come to me; I turn them into finished cocktails with the juice, syrups and the right dilution, and deliver them bottled and ready to pour over ice. It is $175 plus $3 a drink with a 50-drink minimum, and the swing-top bottles are included and yours to keep — around $325 for fifty cocktails. Made with Natalie's juice as standard; hand-squeezed citrus is $100 on top." } },
       { "@type": "Question", "name": "Does setup come out of my four hours?",
         "acceptedAnswer": { "@type": "Answer", "text": "No. The four hours is bar service — the clock starts when the bar opens and stops when it closes. Setup and breakdown are on my time. In practice I arrive 60 to 90 minutes before your start time to set the bar, cut garnishes and get everything cold, and I stay afterwards to break down and clean up." } },
       { "@type": "Question", "name": "How far will you travel?",
@@ -112,6 +114,7 @@
     </a>
     <nav>
       <a href="hire.html" class="is-current">Hire Me</a>
+      <a href="about.html">About</a>
       <a href="index.html">App</a>
       <a href="blog/">Blog</a>
     </nav>
@@ -171,11 +174,15 @@
         <article class="card">
           <h3>Batched cocktail drop-off</h3>
           <p>
-            No bartender, no line at a bar. I make your cocktails ahead, dilute and bottle them
-            properly, and drop them off ready to pour over ice. The easiest way to serve a real
-            drink at a party you're hosting yourself.
+            No bartender, no line at a bar. You buy the bottles, I turn them into finished
+            cocktails — measured, diluted, and bottled properly — and drop them off ready to pour
+            over ice. <b>They arrive in swing-top bottles that are yours to keep.</b>
           </p>
-          <p class="card-price">$275 prep + $12 per serving</p>
+          <p>
+            The easiest way to serve a genuinely good drink at a party you're hosting yourself,
+            and the cheapest way to work with me.
+          </p>
+          <p class="card-price">$175 + $3 per drink &middot; 50-drink minimum</p>
         </article>
         <article class="card">
           <h3>Bar &amp; equipment</h3>
@@ -213,6 +220,45 @@
       </div>
     </section>
 
+    <!-- Who's behind the bar ---------------------------------------------------------------->
+    <!-- Deliberately sits before the rate card: the Relais & Châteaux line is what makes $850
+         read as reasonable. Full version lives on about.html. -->
+    <section class="wrap hire-section" id="who">
+      <h2>Who you're hiring</h2>
+      <!-- Portrait pending. When one exists: uncomment the figure, drop `no-portrait` from the
+           .bio class, and the two-column layout returns. Working shot behind a bar, not a
+           headshot. 800x1000 WebP, ~100KB. -->
+      <div class="bio no-portrait">
+        <!--
+        <figure class="portrait">
+          <img src="assets/adam.webp" width="800" height="1000"
+               alt="Adam Liscia, private event bartender, working behind the bar in Westchester County, NY" />
+        </figure>
+        -->
+
+        <div class="bio-body">
+          <p>
+            I'm Adam. I tend bar at <b>Bedford Post Tavern</b>, a Relais &amp; Châteaux inn in
+            Bedford, where I lead the batch cocktail program and make the house syrups. Twelve
+            years in restaurants, eight of them behind a bar.
+          </p>
+          <p>
+            It's a program run at a level most people never see: an order of operations for every
+            drink, nothing free-poured, every syrup <b>weighed on a scale</b> rather than eyeballed.
+            Your backyard isn't that bar and I won't pretend otherwise — but that's where I learned
+            exactly what a drink is supposed to taste like, which is why I can hit it fast at a
+            party without holding up your line.
+          </p>
+          <p>
+            What you get is what that training produces: cocktails batched ahead so nobody waits,
+            syrups I made myself, a station that stays clean, and somebody behind it who's used to
+            talking to a room.
+          </p>
+          <a class="bio-more" href="about.html">More about me &rarr;</a>
+        </div>
+      </div>
+    </section>
+
     <!-- Pricing ---------------------------------------------------------------------------->
     <!-- Changing these? Keep the Offer prices in the JSON-LD block above in sync. -->
     <section class="wrap hire-section" id="pricing">
@@ -244,7 +290,12 @@
           </tr>
           <tr><th scope="row">&nbsp;&nbsp;&mdash; 51&ndash;75 guests / 76&ndash;100 guests</th><td>+$200 / +$275</td></tr>
           <tr><th scope="row">Cocktail menu design <span>standalone</span></th><td>$300</td></tr>
-          <tr><th scope="row">Batched drop-off <span>no service</span></th><td>$275 + $12/serving</td></tr>
+          <tr>
+            <th scope="row">Batched drop-off
+              <span>no bartender &middot; 50-drink minimum &middot; bottles included</span>
+            </th>
+            <td>$175 + $3/drink</td>
+          </tr>
           <tr><th scope="row">Travel beyond 30 minutes</th><td>$75 &middot; $150 past 45 min</td></tr>
           <tr><th scope="row">Peak dates <span>December, NYE, late-spring &amp; autumn Saturdays</span></th><td>+25%</td></tr>
         </tbody>
@@ -380,6 +431,12 @@
           <p>Bottled juice is fine — the Natalie's in the standard package is what a lot of good bars pour. But fresh is a real step up in a drink like a margarita or a daiquiri where citrus <em>is</em> the cocktail. What you're actually paying for is about three hours of squeezing.</p>
         </details>
         <details>
+          <summary>How does the batched drop-off work?</summary>
+          <p>You buy the spirits — same as any event, and I'll place that order for you if you like. They come to me, I turn them into finished cocktails with the juice, syrups, and the right dilution, and I deliver them bottled and ready to pour over ice.</p>
+          <p>It's $175 plus $3 a drink, 50 drinks minimum, and the swing-top bottles are included and yours to keep. Fifty cocktails works out around $325 — roughly half what the same drinks would cost you at a bar, and nobody has to work your party.</p>
+          <p>Made with Natalie's juice as standard. Want them hand-squeezed instead? That's $100 on top.</p>
+        </details>
+        <details>
           <summary>Does setup come out of my four hours?</summary>
           <p>No. The four hours is <b>bar service</b> — the clock starts when the bar opens and stops when it closes. Setup and breakdown are on my time.</p>
           <p>In practice I arrive 60&ndash;90 minutes before your start time to set the bar, cut garnishes, and get everything cold, and I stay afterwards to break down and clean up. You're paying for the hours your guests are being served, not for me carrying crates.</p>
@@ -474,6 +531,7 @@
   <footer class="site-footer wrap">
     <div>
       <a href="hire.html">Hire Me</a>
+      <a href="about.html">About</a>
       <a href="index.html">App</a>
       <a href="blog/">Blog</a>
       <a href="privacy.html">Privacy</a>

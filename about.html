@@ -7,10 +7,12 @@
   <meta name="description" content="I tend bar at Bedford Post Tavern, a Relais &amp; Châteaux property, and work private events across Westchester and Fairfield County. Twelve years in restaurants, eight behind the bar." />
   <link rel="canonical" href="https://barcraft.bar/about.html" />
   <link rel="icon" href="assets/favicon.png" />
+  <meta name="theme-color" content="#f3eee5" />
   <link rel="stylesheet" href="styles.css" />
-
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1115" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Instrument+Sans:wght@400;500;600&display=swap" />
+  <script>document.documentElement.classList.add("js")</script>
 
   <meta property="og:type" content="profile" />
   <meta property="og:site_name" content="BarCraft" />
@@ -26,9 +28,6 @@
   <meta name="twitter:description" content="Twelve years in restaurants, eight behind the bar. Private events across Westchester and Fairfield County." />
   <meta name="twitter:image" content="https://barcraft.bar/assets/og-image.png" />
 
-  <!-- Person entity. The @id matches the `founder` node on hire.html, so Google resolves the
-       hire page's business and this page to the same person. Once a portrait lands in
-       assets/, add: "image": "https://barcraft.bar/assets/adam.jpg" -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -58,212 +57,251 @@
   </script>
 </head>
 <body>
-  <header class="site-header wrap">
-    <a class="brand" href="index.html">
-      <img src="assets/logo.png" alt="BarCraft logo" />
-      <span class="name">BarCraft</span>
-    </a>
-    <nav>
-      <a href="hire.html">Hire Me</a>
-      <a href="about.html" class="is-current">About</a>
-      <a href="index.html">App</a>
-      <a href="blog/">Blog</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt="" width="34" height="34" /><span>BarCraft</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="site-nav" id="site-nav">
+        <a href="hire.html">Private Events</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="app.html">The App</a>
+        <a href="blog/">Blog</a>
+        <a class="btn btn-primary btn-sm" href="hire.html#inquire">Check availability</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <!-- Hero ------------------------------------------------------------------------------->
-    <section class="wrap hire-hero">
-      <p class="eyebrow">Bedford, New York</p>
-      <h1>Twelve years in restaurants. Eight behind the bar.</h1>
-      <p class="lede">
-        I'm Adam Liscia. I tend bar at Bedford Post Tavern, and on my nights off I work private
-        events across Westchester and Fairfield County. This is the part of the site where I tell
-        you why that's worth what I charge.
-      </p>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow reveal">Bedford, New York</p>
+        <h1 class="reveal" style="--d:.1s">Twelve years in restaurants. <em>Eight behind the bar.</em></h1>
+        <p class="lede reveal" style="--d:.2s">
+          I'm Adam Liscia. I tend bar at Bedford Post Tavern, and on my nights off I work private
+          events across Westchester and Fairfield County. This is the part of the site where I tell
+          you why that's worth what I charge.
+        </p>
+      </div>
     </section>
 
-    <!-- The room ---------------------------------------------------------------------------->
-    <section class="wrap hire-section" id="room">
-      <h2>The room I work in</h2>
-      <!-- Portrait pending. When one exists: uncomment the figure below, drop `no-portrait`
-           from the .bio class above, and the two-column layout returns. Use a working shot —
-           behind a bar, mid-service — not a headshot. 800x1000 WebP, ~100KB. -->
-      <div class="bio no-portrait">
-        <!--
-        <figure class="portrait">
-          <img src="assets/adam.webp" width="800" height="1000"
-               alt="Adam Liscia working behind the bar at a private event in Westchester County, NY" />
+    <section class="section" id="room">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow">The room I work in</p>
+          <div class="prose">
+            <p>
+              <b>Bedford Post Tavern is a Relais &amp; Châteaux property.</b> That tells you the tier.
+              What it doesn't tell you is what working in a bar like that actually does to a
+              bartender.
+            </p>
+            <p>
+              It's a program that treats a cocktail as a process, not a performance. Every drink has
+              <b>an order of operations</b> worked out in advance &mdash; what gets built first, which
+              motion happens while the shaker is going, when the glass comes off the ice. Nothing is
+              free-poured; every ingredient goes through a jigger. Every syrup is
+              <b>weighed on a scale</b> rather than eyeballed, so the batch made in March tastes like
+              the one made in November. It is a level of deliberateness most people have never seen
+              at a bar.
+            </p>
+            <p>
+              <b>Your backyard is not that bar, and I'm not going to pretend it is.</b> There's no
+              glass fridge on your patio, and I'm not going to make eight people wait while I jigger
+              a vodka soda. What travels isn't the equipment &mdash; it's knowing exactly what a drink is
+              supposed to taste like, and having built it correctly enough thousands of times to land
+              there without stopping to measure. Years of <em>not</em> free-pouring are what buy you
+              the right to free-pour and still be correct.
+            </p>
+            <p>
+              <b>I lead the batch program at the Tavern</b> &mdash; the cocktails we build in volume ahead
+              of service. When a hundred drinks have to taste like the one that got approved, that's
+              my job. That part transfers to your party completely, and it's the single skill that
+              makes fifty guests work with one bartender and no line.
+            </p>
+          </div>
+        </div>
+        <figure class="frame tall reveal" style="--d:.15s">
+          <img src="assets/events/batched-lg.webp" width="1600" height="1200" loading="lazy"
+               alt="Swing-top bottles of batched cocktails, built in volume ahead of a private event" />
+          <figcaption>A hundred drinks that taste like the first one</figcaption>
         </figure>
-        -->
+      </div>
+    </section>
 
-        <div class="bio-body">
-          <p>
-            <b>Bedford Post Tavern is a Relais &amp; Châteaux property.</b> That tells you the tier.
-            What it doesn't tell you is what working in a bar like that actually does to a
-            bartender.
-          </p>
-          <p>
-            It's a program that treats a cocktail as a process, not a performance. Every drink has
-            <b>an order of operations</b> worked out in advance — what gets built first, which
-            motion happens while the shaker is going, when the glass comes off the ice. Nothing is
-            free-poured; every ingredient goes through a jigger. Every syrup is
-            <b>weighed on a scale</b> rather than eyeballed, so the batch made in March tastes like
-            the one made in November. It is a level of deliberateness most people have never seen
-            at a bar.
-          </p>
-          <p>
-            <b>Your backyard is not that bar, and I'm not going to pretend it is.</b> There's no
-            glass fridge on your patio, and I'm not going to make eight people wait while I jigger
-            a vodka soda. What travels isn't the equipment — it's knowing exactly what a drink is
-            supposed to taste like, and having built it correctly enough thousands of times to land
-            there without stopping to measure. Years of <em>not</em> free-pouring are what buy you
-            the right to free-pour and still be correct.
-          </p>
-          <p>
-            <b>I lead the batch program at the Tavern</b> — the cocktails we build in volume ahead
-            of service. When a hundred drinks have to taste like the one that got approved, that's
-            my job. That part transfers to your party completely, and it's the single skill that
-            makes fifty guests work with one bartender and no line.
-          </p>
+    <section class="section alt" id="approach">
+      <div class="container">
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow">How I bartend</p>
+            <h2>An event isn't <em>a restaurant shift.</em></h2>
+          </div>
+          <p class="reveal" style="--d:.1s">Here's what carries over.</p>
+        </div>
+        <div class="card-grid">
+          <article class="reveal">
+            <h3>Batch what should be batched</h3>
+            <p>
+              The reason your party can have one bartender and no line is that most of the work
+              happened yesterday. A batched cocktail isn't a punch bowl &mdash; it's the drink built to
+              spec at volume, diluted to exactly where a shaken drink lands, and chilled so it pours in
+              four seconds instead of ninety. Done right, no one can tell. Done wrong, everyone can.
+            </p>
+          </article>
+          <article class="reveal" style="--d:.1s">
+            <h3>Fast hands, right ratios</h3>
+            <p>
+              At a party I'm not going to jigger a vodka soda while eight people wait &mdash; I'll pour it,
+              and it'll be right. That's what the day job buys. Where the ratio actually decides the
+              drink &mdash; anything shaken, anything batched, anything with citrus in it &mdash; it gets
+              measured, every time.
+            </p>
+          </article>
+          <article class="reveal">
+            <h3>Work clean, work quiet</h3>
+            <p>
+              A good bar is boring to watch. Ice where it belongs, garnish cut ahead, tools in the same
+              place all night, nothing scrambling in front of guests. Whatever chaos there is happens
+              before the doors open &mdash; and your kitchen gets left the way I found it.
+            </p>
+          </article>
+          <article class="reveal" style="--d:.1s">
+            <h3>Half the job isn't the drink</h3>
+            <p>
+              People come to a bar to talk to somebody. Twelve years in dining rooms teaches you to read
+              a room &mdash; who's had enough, who's standing alone, who wants to hear what's in the glass
+              and who just wants the glass. At a private party that's worth more than any technique.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Approach ---------------------------------------------------------------------------->
-    <section class="wrap hire-section" id="approach">
-      <h2>How I bartend</h2>
-      <p class="section-lede">
-        An event isn't a restaurant shift. Here's what carries over.
-      </p>
-      <div class="cards">
-        <article class="card">
-          <h3>Batch what should be batched</h3>
-          <p>
-            The reason your party can have one bartender and no line is that most of the work
-            happened yesterday. A batched cocktail isn't a punch bowl — it's the drink built to
-            spec at volume, diluted to exactly where a shaken drink lands, and chilled so it pours
-            in four seconds instead of ninety. Done right, no one can tell. Done wrong, everyone
-            can.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Fast hands, right ratios</h3>
-          <p>
-            At a party I'm not going to jigger a vodka soda while eight people wait — I'll pour it,
-            and it'll be right. That's what the day job buys. Where the ratio actually decides the
-            drink — anything shaken, anything batched, anything with citrus in it — it gets
-            measured, every time.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Work clean, work quiet</h3>
-          <p>
-            A good bar is boring to watch. Ice where it belongs, garnish cut ahead, tools in the
-            same place all night, nothing scrambling in front of guests. Whatever chaos there is
-            happens before the doors open — and your kitchen gets left the way I found it.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Half the job isn't the drink</h3>
-          <p>
-            People come to a bar to talk to somebody. Twelve years in dining rooms teaches you to
-            read a room — who's had enough, who's standing alone, who wants to hear what's in the
-            glass and who just wants the glass. At a private party that's worth more than any
-            technique.
-          </p>
-        </article>
+    <section class="section" id="history">
+      <div class="container">
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow">Experience</p>
+            <h2>Where I've worked</h2>
+          </div>
+        </div>
+        <ul class="history">
+          <li class="reveal">
+            <p class="when">2024 &ndash; present</p>
+            <div>
+              <h3>Bedford Post Tavern &mdash; Bedford, NY</h3>
+              <p>Bartender at a Relais &amp; Châteaux inn. I lead the batch cocktail program and make the house syrups.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <p class="when">2023 &ndash; 2024</p>
+            <div>
+              <h3>Fin &amp; Brew &mdash; Peekskill, NY</h3>
+              <p>Head bartender. Ran the cocktail program end to end &mdash; seasonal menu development, ordering with the executive chef, and training the bar staff.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <p class="when">2018 &ndash; 2023</p>
+            <div>
+              <h3>Half Moon &mdash; Dobbs Ferry, NY</h3>
+              <p>Bartender, then assistant manager, at a high-volume waterfront restaurant on the Hudson. Where I learned to work fast without letting anything slip.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <p class="when">2014 &ndash; 2018</p>
+            <div>
+              <h3>Harvest on Hudson &mdash; Hastings-on-Hudson, NY</h3>
+              <p>Front waiter leading a three-person service team. Where I learned French service and how a real dining room actually runs.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <p class="when">Before all that</p>
+            <div>
+              <h3>Math teacher</h3>
+              <p>I taught math in New York City schools, and I still tutor. It's probably why I'd rather explain what's in your glass than perform at you.</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- History ----------------------------------------------------------------------------->
-    <section class="wrap hire-section" id="history">
-      <h2>Where I've worked</h2>
-      <ul class="history">
-        <li>
-          <p class="when">2024 &ndash; present</p>
-          <h3>Bedford Post Tavern &mdash; Bedford, NY</h3>
+    <section class="section band" id="barcraft">
+      <div class="container app-teaser">
+        <div class="reveal">
+          <p class="eyebrow">The app</p>
+          <h2>I also built <em>the app.</em></h2>
           <p>
-            Bartender at a Relais &amp; Châteaux inn. I lead the batch cocktail program and make
-            the house syrups.
+            <a href="app.html" style="color:var(--ink)">BarCraft</a> is a cocktail app I wrote for working
+            bartenders &mdash; look up a recipe, save your own, scale it for batching with the dilution
+            handled. The math in it is the math I use at work. I have a degree in mathematics from Stony
+            Brook, which is a strange thing to bring to a bar right up until you're scaling a recipe to
+            a hundred and forty servings and the dilution has to land exactly right.
           </p>
-        </li>
-        <li>
-          <p class="when">2023 &ndash; 2024</p>
-          <h3>Fin &amp; Brew &mdash; Peekskill, NY</h3>
           <p>
-            Head bartender. Ran the cocktail program end to end — seasonal menu development,
-            ordering with the executive chef, and training the bar staff.
+            Mostly it means that when I tell you three cocktails will be batched and ready before your
+            first guest arrives, that's an arithmetic problem I've already solved, not a promise I'm
+            hoping to keep.
           </p>
-        </li>
-        <li>
-          <p class="when">2018 &ndash; 2023</p>
-          <h3>Half Moon &mdash; Dobbs Ferry, NY</h3>
-          <p>
-            Bartender, then assistant manager, at a high-volume waterfront restaurant on the
-            Hudson. Where I learned to work fast without letting anything slip.
-          </p>
-        </li>
-        <li>
-          <p class="when">2014 &ndash; 2018</p>
-          <h3>Harvest on Hudson &mdash; Hastings-on-Hudson, NY</h3>
-          <p>
-            Front waiter leading a three-person service team. Where I learned French service and
-            how a real dining room actually runs.
-          </p>
-        </li>
-        <li>
-          <p class="when">Before all that</p>
-          <h3>Math teacher</h3>
-          <p>
-            I taught math in New York City schools, and I still tutor. It's probably why I'd rather
-            explain what's in your glass than perform at you.
-          </p>
-        </li>
-      </ul>
+          <div class="app-actions">
+            <a class="btn btn-primary" href="https://apps.apple.com/us/app/barcraft-cocktail-recipes/id6783025586">Download on the App Store</a>
+            <a class="text-link" href="app.html">See the app <span class="arrow">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="phones reveal" style="--d:.15s">
+          <img src="assets/app/batch.webp" width="640" height="1261" loading="lazy" alt="BarCraft app — the batch calculator" />
+          <img src="assets/app/edit.webp" width="640" height="1261" loading="lazy" alt="BarCraft app — editing a cocktail recipe" />
+        </div>
+      </div>
     </section>
 
-    <!-- BarCraft ---------------------------------------------------------------------------->
-    <section class="wrap hire-section" id="barcraft">
-      <h2>I also built the app</h2>
-      <p>
-        <a href="index.html">BarCraft</a> is a cocktail app I wrote for working bartenders — look up
-        a spec, save your own, scale it for batching with the dilution handled. The math in it is
-        the math I use at work. I have a degree in mathematics from Stony Brook, which is a strange
-        thing to bring to a bar right up until you're scaling a recipe to a hundred and forty
-        servings and the dilution has to land exactly right.
-      </p>
-      <p class="fine">
-        Mostly it means that when I tell you three cocktails will be batched and ready before your
-        first guest arrives, that's an arithmetic problem I've already solved, not a promise I'm
-        hoping to keep.
-      </p>
-    </section>
-
-    <!-- CTA --------------------------------------------------------------------------------->
-    <section class="wrap hire-section">
-      <div class="cross-door">
-        <h2>Planning something?</h2>
-        <p>
-          The rate card, what's included, and the questions hosts usually ask are all on the hire
-          page. No obligation and no deposit to ask — I answer every inquiry within a day.
-        </p>
-        <a class="btn btn-primary" href="hire.html#inquire">Check my availability</a>
+    <section class="section cta">
+      <div class="container">
+        <p class="eyebrow reveal">Planning something?</p>
+        <h2 class="reveal" style="--d:.1s">Let's talk about <em>your party.</em></h2>
+        <p class="reveal" style="--d:.2s">The rate card, what's included, and the questions hosts usually ask are all on the events page. No obligation and no deposit to ask &mdash; I answer every inquiry within a day.</p>
+        <a class="btn btn-primary reveal" style="--d:.3s" href="hire.html#inquire">Check my availability <span class="arrow">&rarr;</span></a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer wrap">
-    <div>
-      <a href="hire.html">Hire Me</a>
-      <a href="about.html">About</a>
-      <a href="index.html">App</a>
-      <a href="blog/">Blog</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-      <a href="support.html">Support</a>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="index.html"><img src="assets/logo.png" alt="" width="34" height="34" /><span>BarCraft</span></a>
+          <p>Craft cocktail bartending for private events across Westchester County, NY and Fairfield County, CT &mdash; and the cocktail app for working bartenders.</p>
+        </div>
+        <div>
+          <h4>Events</h4>
+          <ul>
+            <li><a href="hire.html#services">Services</a></li>
+            <li><a href="hire.html#pricing">Pricing</a></li>
+            <li><a href="hire.html#faq">Questions</a></li>
+            <li><a href="hire.html#inquire">Inquire</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>BarCraft</h4>
+          <ul>
+            <li><a href="about.html">About Adam</a></li>
+            <li><a href="app.html">The app</a></li>
+            <li><a href="blog/">Blog</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <a class="footer-big" href="hire.html#inquire">Start an inquiry</a>
+          <ul>
+            <li><a href="mailto:adamliscia@gmail.com">adamliscia@gmail.com</a></li>
+            <li><a href="https://apps.apple.com/us/app/barcraft-cocktail-recipes/id6783025586">BarCraft on the App Store</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BarCraft &middot; Adam Liscia</p>
+        <p><a href="privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="terms.html">Terms</a></p>
+      </div>
     </div>
-    <p>&copy; 2026 BarCraft &middot; Adam Liscia</p>
   </footer>
+  <script src="js/site.js"></script>
 </body>
 </html>

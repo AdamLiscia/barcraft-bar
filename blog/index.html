@@ -1,27 +1,36 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BarCraft Blog — cocktail recipes, ratios &amp; batching</title><meta name="description" content="Cocktail specs, ratios, and batching tips from a working bartender. Download BarCraft to save and scale any recipe."><link rel="canonical" href="https://barcraft.bar/blog/"><meta property="og:type" content="article"><meta property="og:title" content="BarCraft Blog — cocktail recipes, ratios &amp; batching"><meta property="og:description" content="Cocktail specs, ratios, and batching tips from a working bartender. Download BarCraft to save and scale any recipe."><meta property="og:url" content="https://barcraft.bar/blog/"><meta property="og:site_name" content="BarCraft"><meta name="twitter:card" content="summary"><style>
-:root{--fg:#1a1a1a;--muted:#666;--bg:#fff;--card:#f3f8f5;--accent:#12996a;--accent-ink:#0c7a54;--line:#e2ebe6}
-@media(prefers-color-scheme:dark){:root{--fg:#f5f5f5;--muted:#a3a8b3;--bg:#0f1115;--card:#1a1d23;--accent:#5dd39e;--accent-ink:#5dd39e;--line:#2a2e37}}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BarCraft Blog — cocktail recipes, ratios &amp; batching</title><meta name="description" content="Cocktail specs, ratios, and batching tips from a working bartender. Download BarCraft to save and scale any recipe."><link rel="canonical" href="https://barcraft.bar/blog/"><meta property="og:type" content="article"><meta property="og:title" content="BarCraft Blog — cocktail recipes, ratios &amp; batching"><meta property="og:description" content="Cocktail specs, ratios, and batching tips from a working bartender. Download BarCraft to save and scale any recipe."><meta property="og:url" content="https://barcraft.bar/blog/"><meta property="og:site_name" content="BarCraft"><meta name="twitter:card" content="summary"><meta name="theme-color" content="#f3eee5"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Instrument+Sans:wght@400;500&display=swap"><style>
+:root{--fg:#16130f;--muted:#6a6157;--bg:#f3eee5;--card:#fbf8f2;--accent:#9c3d1e;--accent-hover:#b44b28;--line:rgba(22,19,15,.14);--serif:"Fraunces",Georgia,serif;--sans:"Instrument Sans","Helvetica Neue",Arial,sans-serif}
 *{box-sizing:border-box}
-body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--fg);background:var(--bg)}
-.wrap{max-width:720px;margin:0 auto;padding:24px}
-a{color:var(--accent-ink)}
-img{max-width:100%;height:auto;border-radius:10px}
-h1{font-size:2rem;line-height:1.2;margin:.2em 0}
-.dek{color:var(--muted);font-size:1.15rem;margin:0 0 1em}
-.byline{color:var(--muted);font-size:.9rem;margin-bottom:1.5em}
-.spec-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin:1.5em 0}
+body{margin:0;font:17px/1.7 var(--sans);color:var(--fg);background:var(--bg);-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent-hover)}
+img{max-width:100%;height:auto;display:block;margin:1.5em 0}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1.1}
+h1{font-size:clamp(2.3rem,6vw,3.4rem);margin:.3em 0 .25em}
+h2{font-size:1.75rem;margin:1.8em 0 .5em}
+h3{font-size:1.3rem;margin:1.5em 0 .4em}
+.dek{font-family:var(--serif);font-style:italic;color:var(--muted);font-size:1.3rem;line-height:1.45;margin:0 0 1em}
+.byline{color:var(--muted);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:1.5em}
+.spec-card{background:var(--card);border:1px solid var(--line);padding:24px 28px;margin:2em 0}
 .spec-card h2{margin-top:0}
 .spec-meta{display:flex;flex-wrap:wrap;gap:16px;color:var(--muted);font-size:.95rem;margin-top:12px}
-.cta{display:block;background:var(--accent);color:#062018;text-decoration:none;text-align:center;font-weight:700;padding:14px 20px;border-radius:12px;margin:2em 0}
+.cta{display:block;background:var(--fg);color:var(--bg);text-decoration:none;text-align:center;font-weight:500;letter-spacing:.02em;padding:16px 20px;margin:2em 0}
+.cta:hover{background:var(--accent);color:#fff}
 .cta.small{margin:1em 0}
-.posts{list-style:none;padding:0}
-.posts li{padding:16px 0;border-bottom:1px solid var(--line)}
-.posts a{font-size:1.2rem;font-weight:600;text-decoration:none}
-footer{color:var(--muted);font-size:.85rem;margin-top:3em;border-top:1px solid var(--line);padding-top:1em}
+.posts{list-style:none;padding:0;border-top:1px solid var(--line)}
+.posts li{padding:22px 0;border-bottom:1px solid var(--line)}
+.posts a{font-family:var(--serif);font-size:1.5rem;letter-spacing:-.01em;color:var(--fg);text-decoration:none}
+.posts a:hover{color:var(--accent)}
+footer{color:var(--muted);font-size:.85rem;margin-top:4em;border-top:1px solid var(--line);padding-top:1.2em}
 .site-header{border-bottom:1px solid var(--line);background:var(--bg)}
-.site-header .bar{max-width:720px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;gap:12px}
-.site-header .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg);font-weight:700;font-size:1.1rem;letter-spacing:.2px}
-.site-header .brand img{width:30px;height:30px;border-radius:8px}
-.site-header .tag{margin-left:auto;color:var(--muted);text-decoration:none;font-size:.9rem;font-weight:600}
-.site-header .tag:hover{color:var(--accent-ink)}
-</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Blog", "name": "BarCraft Blog", "url": "https://barcraft.bar/blog/"}</script></head><body><header class="site-header"><div class="bar"><a class="brand" href="https://barcraft.bar/"><img src="/assets/logo.png" alt="">BarCraft</a><a class="tag" href="https://barcraft.bar/">← Home</a></div></header><main class="wrap"><h1>BarCraft Blog</h1><p class="dek">Cocktail specs, ratios, and batching from behind the bar.</p><a class="cta small" href="https://barcraft.bar/">📱 Get BarCraft free — save &amp; batch this recipe</a><ul class="posts"><li><a href="how-important-is-the-ice-you-use-very.html">How to Make Clear Ice at Home (No Mold — Just a Coffee Thermos)</a><div class="dek">Why ice is the most underrated ingredient behind the bar — and how to make one perfect clear cube at home with a coffee thermos.</div></li></ul><footer>BarCraft — cocktail specs & batching for working bartenders.</footer></main></body></html>
+.site-header .bar{max-width:1240px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;gap:12px}
+.site-header .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg);font-family:var(--serif);font-size:1.35rem;letter-spacing:-.01em}
+.site-header .brand img{width:32px;height:32px;margin:0}
+.site-header nav{margin-left:auto;display:flex;align-items:center;gap:30px}
+.site-header nav a{color:var(--fg);text-decoration:none;font-size:.78rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase}
+.site-header nav a:hover,.site-header nav a[aria-current]{color:var(--accent)}
+.site-header nav .btn{background:var(--accent);color:#fff;padding:11px 18px}
+.site-header nav .btn:hover{background:var(--accent-hover);color:#fff}
+@media(max-width:820px){.site-header nav a:not(.btn):not([aria-current]){display:none}.site-header nav{gap:18px}}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Blog", "name": "BarCraft Blog", "url": "https://barcraft.bar/blog/"}</script></head><body><header class="site-header"><div class="bar"><a class="brand" href="/"><img src="/assets/logo.png" alt="">BarCraft</a><nav><a href="/hire.html">Private Events</a><a href="/about.html">About</a><a href="/app.html">The App</a><a href="/blog/" aria-current="page">Blog</a><a class="btn" href="/hire.html#inquire">Check availability</a></nav></div></header><main class="wrap"><h1>BarCraft Blog</h1><p class="dek">Cocktail specs, ratios, and batching from behind the bar.</p><a class="cta small" href="https://barcraft.bar/app.html">📱 Get BarCraft free — save &amp; batch this recipe</a><ul class="posts"><li><a href="how-to-make-clear-ice-at-home.html">How to Make Clear Ice at Home (No Mold — Just a Coffee Thermos)</a><div class="dek">Why ice is the most underrated ingredient behind the bar — and how to make one perfect clear cube at home with a coffee thermos.</div></li></ul><footer>BarCraft — cocktail specs & batching for working bartenders.</footer></main></body></html>
